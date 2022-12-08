@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Calcular IMC</h1>
+    <script>
+      const imprimir = (texto) => document.write(texto);
+      const saltoDeLinea = (saltos) => document.write("<br/ >".repeat(saltos));
+      const calcularIMC = (peso, altura) => peso / altura ** 2;
+
+      imprimir(calcularIMC(72, 1.72));
+      saltoDeLinea(3);
+      imprimir(calcularIMC(75, 1.75));
+    </script>
+  </body>
+</html>

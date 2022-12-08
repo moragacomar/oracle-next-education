@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creeper</title>
+    <style>
+      canvas {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="creeper" width="600" height="400"></canvas>
+    <script>
+      const pizarra = document.querySelector("#creeper");
+      const pincel = pizarra.getContext("2d");
+      pincel.fillStyle = "darkgreen";
+      pincel.fillRect(125, 50, 350, 300);
+      pincel.fillStyle = "black";
+      pincel.fillRect(175, 100, 100, 100);
+      pincel.fillRect(330, 100, 100, 100);
+      pincel.fillRect(275, 200, 55, 100);
+      pincel.fillRect(220, 240, 55, 110);
+      pincel.fillRect(330, 240, 55, 110);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Futbol</title>
+  </head>
+  <body>
+    <script>
+      const imprimir = (texto) => document.write(texto);
+      const partidosGanados = Number(prompt("¿Cantidad de partidos ganados?"));
+      const partidosEmpatados = Number(
+        prompt("¿Cantidad de partidos empatados?")
+      );
+      const partidosPerdidos = Number(
+        prompt("¿Cantidad de partidos perdidos?")
+      );
+      const puntos = partidosGanados * 3 + partidosEmpatados;
+
+      imprimir("Partidos ganados: " + partidosGanados + "<br/>");
+      imprimir("Partidos empatados: " + partidosEmpatados + "<br/>");
+      imprimir("Partidos perdidos: " + partidosPerdidos + "<br/>");
+
+      imprimir("Puntos: " + puntos + " ");
+
+      if (puntos > 28) {
+        imprimir("(el equipo esta mejor que el año pasado). <br/>");
+      } else if (puntos < 28) {
+        imprimir("(el equipo esta peor que el año pasado). <br/>");
+      } else {
+        imprimir("(el equipo esta igual que el año pasado). <br/>");
+      }
+    </script>
+  </body>
+</html>

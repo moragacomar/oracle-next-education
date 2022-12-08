@@ -1,0 +1,18 @@
+<script>
+  function saltarLinea() {
+    document.write("<br>");
+  }
+
+  let contador = 0;
+
+  while (contador <= 100) {
+    contador++;
+    if (contador % 2) {
+      document.write(contador + " Este numero es impar!");
+      saltarLinea();
+    } else {
+      document.write(contador + " Este numero es par!");
+      saltarLinea();
+    }
+  }
+</script>

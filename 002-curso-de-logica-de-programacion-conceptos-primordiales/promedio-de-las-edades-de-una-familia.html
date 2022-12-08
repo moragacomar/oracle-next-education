@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promedio de las edades de una familia</title>
+  </head>
+  <body>
+    <script>
+      let cantidadDeIntegrantes = Number(
+        prompt("Ingresa la cantidad de miembros de tu familia:")
+      );
+      let contador = 0;
+      let sumaEdades = 0;
+      while (contador !== cantidadDeIntegrantes) {
+        sumaEdades = sumaEdades + Number(prompt("Edad:"));
+        contador++;
+      }
+      const promedioEdades = sumaEdades / cantidadDeIntegrantes;
+      document.write("Promedio de las edades: " + promedioEdades);
+      let contador1 = 1;
+      while (contador1 <= 100) {
+        if (contador1 % 2 == 0) {
+          document.write(contador1 + "<br>");
+        }
+        contador1++;
+      }
+      document.write("fin");
+    </script>
+  </body>
+</html>

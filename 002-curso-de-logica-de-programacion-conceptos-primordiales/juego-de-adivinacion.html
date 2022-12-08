@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juego de Adivinación</title>
+  </head>
+  <body>
+    <script>
+      const cantidadDeNumeros = Number(
+        prompt("Ingresa la cantidad de numeros disponibles")
+      );
+      const numeroIngresado = Number(
+        prompt("Ingresa un numero entre 0 y " + cantidadDeNumeros)
+      );
+      const getNumeroAleatorio = (limite) => Math.floor(Math.random() * limite);
+      const numeroAleatorio = getNumeroAleatorio(cantidadDeNumeros);
+
+      if (numeroIngresado === numeroAleatorio) {
+        document.write(
+          "¡Felicitaciones, Adivinaste!, el numero pesando era ",
+          numeroAleatorio
+        );
+      } else {
+        if (numeroIngresado < numeroAleatorio) {
+          document.write(
+            "¡NO Adivinaste!, el numero a adivinar era mayor al ingresado"
+          );
+        } else {
+          document.write(
+            "¡NO Adivinaste!, el numero a adivinar era menor al ingresado"
+          );
+        }
+      }
+    </script>
+  </body>
+</html>

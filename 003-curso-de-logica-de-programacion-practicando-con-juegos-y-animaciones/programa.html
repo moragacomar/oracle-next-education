@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primer Programa</title>
+  </head>
+  <body>
+    <canvas
+      id="pizarra"
+      width="600"
+      height="450"
+      style="border: 1px solid #000000"
+    >
+    </canvas>
+    <script>
+      const pizarra = document.querySelector("#pizarra");
+      const pincel = pizarra.getContext("2d");
+      pincel.fillStyle = "cornflowerBlue";
+      pincel.fillRect(0, 0, 600, 150);
+      pincel.fillStyle = "white";
+      pincel.fillRect(0, 150, 600, 150);
+      pincel.fillStyle = "cornflowerBlue";
+      pincel.fillRect(0, 300, 600, 150);
+      pincel.fillStyle = "yellow";
+      pincel.beginPath();
+      pincel.arc(300, 225, 50, 0, 2 * 3.14);
+      pincel.fill();
+    </script>
+  </body>
+</html>

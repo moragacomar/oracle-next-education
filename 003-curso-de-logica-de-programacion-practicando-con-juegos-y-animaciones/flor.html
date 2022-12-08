@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programa v2</title>
+  </head>
+  <body>
+    <canvas
+      id="pizarra"
+      width="600"
+      height="400"
+      style="border: 1px solid red"
+    ></canvas>
+    <script>
+      const pantalla = document.querySelector("canvas");
+      const pincel = pantalla.getContext("2d");
+      pincel.fillStyle = "lightgray";
+      pincel.fillRect(0, 0, 600, 400);
+
+      const dibujarCirculo = (x, y, radio, color) => {
+        pincel.fillStyle = color;
+        pincel.beginPath();
+        pincel.arc(x, y, radio, 0, 2 * 3.14);
+        pincel.fill();
+      };
+
+      const dibujarFlor = () => {
+        dibujarCirculo(300, 220, 10, "blue");
+        dibujarCirculo(300, 200, 10, "red");
+        dibujarCirculo(300, 180, 10, "yellow");
+        dibujarCirculo(280, 200, 10, "orange");
+        dibujarCirculo(320, 200, 10, "black");
+      };
+
+      dibujarFlor();
+    </script>
+  </body>
+</html>

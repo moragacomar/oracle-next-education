@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>¿Alcohol o gasolina?</h3>
+    <script>
+      let capacidadDelTanque = 40;
+      let kilometrosRecorridosConTanqueLlenoGasolina = 480;
+      let kilometrosRecorridosConTanqueLlenoAlcohol = 300;
+      let eficienciaDelCarroConGasolina =
+        kilometrosRecorridosConTanqueLlenoGasolina / capacidadDelTanque;
+      let eficienciaDelCarroConAlcohol =
+        kilometrosRecorridosConTanqueLlenoAlcohol / capacidadDelTanque;
+      document.write(
+        "El carro recorre " +
+          eficienciaDelCarroConGasolina +
+          "km, por litro de Gasolina"
+      );
+      document.write("<br/>");
+      document.write(
+        "El carro recorre " +
+          eficienciaDelCarroConAlcohol +
+          "km, por litro de Alcohol"
+      );
+    </script>
+  </body>
+</html>

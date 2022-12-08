@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programa v3</title>
+  </head>
+  <body>
+    <canvas
+      id="pizarra"
+      width="600"
+      height="400"
+      style="border: 1px solid red"
+    ></canvas>
+
+    <script>
+      const colores = ["blue", "red", "green"];
+      const pantalla = document.querySelector("canvas");
+      const pincel = pantalla.getContext("2d");
+      pincel.fillStyle = "grey";
+      pincel.fillRect(0, 0, 600, 400);
+      variableAux = 0;
+
+      function dibujarCirculo(evento) {
+        const x = evento.pageX - pantalla.offsetLeft;
+        const y = evento.pageY - pantalla.offsetTop;
+        pincel.fillStyle = colores[variableAux];
+        pincel.beginPath();
+        pincel.arc(x, y, 10, 0, 2 * 3.14);
+        pincel.fill();
+        console.log(x + "," + y);
+      }
+
+      pantalla.onclick = dibujarCirculo;
+
+      function alterarColor() {
+        variableAux < colores.length - 1 ? variableAux++ : (variableAux = 0);
+        return false;
+      }
+
+      pantalla.oncontextmenu = alterarColor;
+    </script>
+  </body>
+</html>

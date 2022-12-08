@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recetas de Armando</title>
+  </head>
+  <body>
+    <h1>Recetas de Armando</h1>
+
+    <script>
+      const ingredientes = [];
+      const cantidad = parseInt(prompt("¿Cuántos ingredientes vas a añadir?"));
+      let contador = 1;
+      while (contador <= cantidad) {
+        let ingrediente = prompt(
+          "Informe el ingrediente ".toLowerCase() + contador
+        );
+        if (!ingredientes.includes(ingrediente)) {
+          ingredientes.push(ingrediente);
+          contador++;
+        }
+      }
+      document.write(ingredientes);
+    </script>
+  </body>
+</html>

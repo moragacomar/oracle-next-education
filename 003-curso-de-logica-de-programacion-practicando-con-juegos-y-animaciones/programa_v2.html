@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programa v2</title>
+  </head>
+  <body>
+    <canvas
+      id="pizarra"
+      width="600"
+      height="400"
+      style="border: 1px solid red"
+    ></canvas>
+    <script>
+      const dibujarCuadrado = (x, y, w, h, color = "green") => {
+        pincel.fillStyle = color;
+        pincel.strokeStyle = "black";
+        pincel.fillRect(x, y, w, h);
+        pincel.strokeRect(x, y, w, h);
+      };
+
+      const pizarra = document.getElementById("pizarra");
+      const pincel = pizarra.getContext("2d");
+
+      for (let i = 0; i <= pizarra.width; i = i + 50) {
+        dibujarCuadrado(i, 0, 50, 50, "blue");
+        dibujarCuadrado(i, 50, 50, 50, "yellow");
+        dibujarCuadrado(i, 100, 50, 50, "blue");
+      }
+    </script>
+  </body>
+</html>

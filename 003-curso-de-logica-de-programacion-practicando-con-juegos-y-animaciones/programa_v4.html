@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programa v4</title>
+  </head>
+  <body>
+    <canvas
+      id="pizarra"
+      width="600"
+      height="400"
+      style="border: 1px solid red"
+    ></canvas>
+    <script>
+      const pizarra = document.getElementById("pizarra");
+      const pincel = pizarra.getContext("2d");
+
+      pincel.fillStyle = "lightgrey";
+      pincel.fillRect(0, 0, 600, 400);
+
+      function disenharCircunferencia(x, y, radio) {
+        pincel.fillStyle = "blue";
+        pincel.beginPath();
+        pincel.arc(x, y, radio, 0, 2 * Math.PI);
+        pincel.fill();
+      }
+
+      function limpiarPantalla() {
+        pincel.clearRect(0, 0, 600, 400);
+      }
+
+      var x = 10;
+      let haciaLaDerecha = true;
+
+      function actualizarPantalla() {
+        limpiarPantalla();
+        disenharCircunferencia(x, 50, 10);
+        if (x === pizarra.width - 10) {
+          haciaLaDerecha = false;
+        } else if (x === 10) {
+          haciaLaDerecha = true;
+        }
+        haciaLaDerecha ? x++ : x--;
+      }
+
+      setInterval(actualizarPantalla, 1);
+    </script>
+  </body>
+</html>
