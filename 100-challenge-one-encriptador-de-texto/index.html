@@ -5,44 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Challenge ONE Encriptador de Texto</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      header {
-        height: 60px;
-        width: 100%;
-        background: #999;
-      }
-      img {
-        margin-top: 5px;
-      }
-      footer {
-        position: fixed;
-        left: 0px;
-        bottom: 0px;
-        height: 20px;
-        width: 100%;
-        background: #999;
-      }
-      #contenedor {
-        margin-top: 10px;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header><img src="img/logo.png" alt="Logo" srcset="" /></header>
-    <div id="contenedor">
-      <input type="text" name="textoNormal" id="textoNormal" />
-      <input type="text" name="textoCodificado" id="textoCodificado" />
-      <input type="submit" value="Codificar" onclick="codificarTexto()" />
-      <input type="submit" value="DeCodificar" onclick="decodificarTexto()" />
-    </div>
-    <div>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    </div>
-    <footer>Developer: Juan Moraga (moragacomar)</footer>
+    <header class="header">
+      <img src="img/logo.png" alt="Logo" srcset="" />
+      Challenge ONE Encriptador de Texto
+    </header>
+    <main>
+      <div class="textoNormal">
+        <textarea
+          name="textoNormal"
+          id="textoNormal"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <div class="botones">
+          <input type="submit" value="Limpiar" id="limpiarTexto1" />
+          <input
+            type="submit"
+            class="code"
+            value="Codificar"
+            id="codificarTexto"
+          />
+        </div>
+      </div>
+      <div class="medio">
+        <img src="img/intercambio.png" alt="Flechas" id="intercambiar" />
+      </div>
+      <div class="textoCodificado">
+        <textarea
+          name="textoCodificado"
+          id="textoCodificado"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <div class="botones">
+          <input type="submit" value="Limpiar" id="limpiarTexto2" />
+          <input
+            class="code"
+            type="submit"
+            value="DeCodificar"
+            id="decodificarTexto"
+          />
+        </div>
+      </div>
+    </main>
+    <footer class="footer">© Desarrollado por Juan Moraga (moragacomar)</footer>
+
     <script src="app.js"></script>
   </body>
 </html>

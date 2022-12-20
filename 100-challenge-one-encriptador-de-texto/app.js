@@ -1,3 +1,4 @@
+
 const codificarTexto = () => {
     const textoNormal = eliminarAcentos(
         document.getElementById("textoNormal").value.toLowerCase()
@@ -20,3 +21,23 @@ const decodificarTexto = () => {
 };
 
 const eliminarAcentos = (texto) => texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+
+const intercambiar = () => {
+    const textoCodificado = document.getElementById("textoCodificado").value;
+    const textoNormal = document.getElementById("textoNormal").value;
+    document.getElementById("textoCodificado").value = textoNormal
+    document.getElementById("textoNormal").value = textoCodificado
+
+}
+
+const limpiar = (e) => {
+    e.target.id === "limpiarTexto1" && (document.getElementById("textoNormal").value = "")
+    e.target.id === "limpiarTexto2" && (document.getElementById("textoCodificado").value = "")
+}
+
+document.getElementById("limpiarTexto1").onclick = limpiar;
+document.getElementById("limpiarTexto2").onclick = limpiar;
+document.getElementById("codificarTexto").onclick = codificarTexto;
+document.getElementById("decodificarTexto").onclick = decodificarTexto;
+document.getElementById("intercambiar").onclick = intercambiar;
+
