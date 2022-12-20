@@ -1,0 +1,26 @@
+* {
+  background-color: #cccccc;
+}
+
+.parrafo {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.centrar {
+  text-align: center;
+}
+
+.negrita {
+  font-weight: 900;
+}
+
+.titulo {
+  background-color: #cccccc;
+}
+strong {
+  background-color: red;
+}
+img {
+  text-align: center;
+}
