@@ -1,0 +1,2 @@
+# Alura es el brazo online de Caelum, una reconocida escuela de tecnología e innovación en Brasil.
+Los fundadores, Paulo Silveira y Guilherme Silveira, se dieron cuenta de que muchos estudiantes tenían interés en nuestros cursos solo que no tenían acceso a nuestro contenido debido a la distancia y el tiempo. Fue así que la plataforma online nació en 2011 y, con el éxito del proyecto, creamos nuestra propia marca Alura en junio de 2013.
