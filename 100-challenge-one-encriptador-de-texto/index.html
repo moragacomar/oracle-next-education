@@ -12,8 +12,26 @@
       <img src="img/logo.png" alt="Logo" srcset="" />
       Challenge ONE Encriptador de Texto
     </header>
-    <main>
-      <div class="textoNormal">
+    <main class="contenedor">
+      <div class="ingresoTexto">
+        <!-- <p contenteditable="true">This is an editable paragraph.</p> -->
+        <textarea
+          class="contenedor__texto"
+          name="texto"
+          id="texto"
+          cols="30"
+          rows=17"
+        ></textarea>
+        <div class="botones">
+          <button>Encriptar</button>
+          <button>Desencriptar</button>
+        </div>
+      </div>
+      <div class="mostrarMensaje">
+        No Hay Mensajes
+      </div>
+
+      <!-- <div class="textoNormal">
         <textarea
           name="textoNormal"
           id="textoNormal"
@@ -49,7 +67,7 @@
             id="decodificarTexto"
           />
         </div>
-      </div>
+      </div> -->
     </main>
     <footer class="footer">
       © Desarrollado por Juan Moraga
