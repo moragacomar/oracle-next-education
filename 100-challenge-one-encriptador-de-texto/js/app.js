@@ -19,7 +19,7 @@ const encriptar = () => {
 
 
 }
-const copiar = () => {
+const copiar2 = () => {
     var dummy = document.createElement("textarea");
     document.body.appendChild(dummy);
     dummy.value = document.querySelector(".mensajeIngreseTexto").innerText;
@@ -27,7 +27,11 @@ const copiar = () => {
     document.execCommand("copy");
     document.body.removeChild(dummy);
 }
-
+function copiar() {
+    var x = document.getElementById("snackbar");
+    x.className = "show";
+    setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+}
 const desencriptar = () => {
     const textoCodificado = eliminarAcentos(document.getElementById("texto").value.toLowerCase());
     const textoNormal = textoCodificado.replace(/ai/g, "a").replace(/enter/g, "e").replace(/imes/g, "i").replace(/ober/g, "o").replace(/ufat/g, "u");
