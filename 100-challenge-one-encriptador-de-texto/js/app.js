@@ -16,27 +16,27 @@ const encriptar = () => {
     });
     msjEncriptado.style.textAlign = "left";
     msjEncriptado.style.justifyContent = "space-between";
-    msjEncriptado.innerHTML = `<p class="mensajeIngreseTexto">${textoCodificado.join(
-        ""
-    )}</p><input class="btnCopiar" type="submit" value="Copiar" />`;
+    msjEncriptado.innerHTML = `<p class="mensajeIngreseTexto">${textoCodificado.join("")} </p><input class="btnCopiar" type="submit" value="Copiar" />`;
     document.querySelector(".btnCopiar").addEventListener("click", copiar, false);
 };
 
-const copiar2 = () => {
-    var dummy = document.createElement("textarea");
+const copiar = () => {
+    /* Copiar al portapapeles*/
+    const dummy = document.createElement("textarea");
     document.body.appendChild(dummy);
     dummy.value = document.querySelector(".mensajeIngreseTexto").innerText;
     dummy.select();
     document.execCommand("copy");
     document.body.removeChild(dummy);
-};
-function copiar() {
-    var x = document.getElementById("snackbar");
-    x.className = "show";
+
+    /* Toast Notificación */
+    const toast = document.getElementById("snackbar");
+    toast.className = "show";
     setTimeout(function () {
-        x.className = x.className.replace("show", "");
-    }, 3000);
-}
+        toast.className = toast.className.replace("show", "");
+    }, 2900);
+};
+
 const desencriptar = () => {
     const textoCodificado = eliminarAcentos(
         document.getElementById("texto").value.toLowerCase()

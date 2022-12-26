@@ -9,13 +9,12 @@
   --bg-color: #f3f5fc;
   --primary: #0a3871;
   --secondary: #d8dfe8;
-  --text-color: #0a3871;
   --white: #ffffff;
 }
 
 body {
   background-color: var(--bg-color);
-  color: var(--text-color);
+  color: var(--primary);
   font-family: "Inter", sans-serif;
 }
 
@@ -65,7 +64,7 @@ body {
 
 .contenedor .footer {
   background-color: var(--bg-color);
-  color: var(--text-color);
+  color: var(--primary);
   grid-area: footer;
   text-align: center;
   padding: 0px;
@@ -123,24 +122,23 @@ body {
 .contenedor .btnDesencriptar {
   grid-area: btnDesencriptar;
   background-color: var(--bg-color);
-  color: var(--text-color);
-  border: 1px solid var(--text-color);
+  color: var(--primary);
+  border: 1px solid var(--primary);
 }
 .contenedor .btnCopiar {
   margin: 15px 0px;
   width: 100%;
   grid-area: btnDesencriptar;
   background-color: var(--white);
-  color: var(--text-color);
-  border: 1px solid var(--text-color);
-  /* display: none; */
+  color: var(--primary);
+  border: 1px solid var(--primary);
 }
 
 .textarea {
   width: 100%;
   height: 98%;
   background-color: var(--bg-color);
-  color: var(--text-color);
+  color: var(--primary);
   border: none;
   font-size: 1.5rem;
   font-family: "Inter", sans-serif;
@@ -151,7 +149,7 @@ body {
   border: none;
   border-radius: 10px;
   padding: 5px;
-  color: var(--text-color);
+  color: var(--primary);
 }
 
 .advertencia {
@@ -166,30 +164,31 @@ body {
 }
 
 ::placeholder {
-  color: var(--text-color);
+  color: var(--primary);
   opacity: 1; /* Firefox */
 }
 
 :-ms-input-placeholder {
-  color: var(--text-color);
+  color: var(--primary);
 }
 
 ::-ms-input-placeholder {
-  color: var(--text-color);
+  color: var(--primary);
 }
 a {
-  color: var(--text-color);
+  color: var(--primary);
   text-decoration: none; /* no underline */
 }
-/* TOAST */
+
+/* Toast Notificación */
 #snackbar {
   visibility: hidden;
   min-width: 250px;
   margin-left: -125px;
-  background-color: #333;
-  color: #fff;
+  background-color: var(--primary);
+  color: var(--white);
   text-align: center;
-  border-radius: 2px;
+  border-radius: 20px;
   padding: 16px;
   position: fixed;
   z-index: 1;
