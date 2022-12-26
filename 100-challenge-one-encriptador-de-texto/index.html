@@ -1,56 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Challenge ONE Encriptador de Texto</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Challenge ONE Encriptador de Texto</title>
+</head>
+<body>
+  <div class="contenedor">
+    <header class="header">
+      <img src="img/logo.png" alt="Logo" srcset="" />
+      Challenge ONE Encriptador de Texto
+    </header>
+    <main class="contenido">
+      <textarea class="textarea" name="texto" id="texto" placeholder="Ingrese el texto aqui">fenterlimescimesdaidenters poberr enternfrenterntair enterstenter dentersaifimesober y haibenterrlober cobernclufatimesdober cobern enterximestober!</textarea>
+      <p class="advertencia">Solo letras minúsculas y sin acentos</p>
+    </main>
+    <aside class="sidebar">
+      <img src="img/muñeco.png" alt="Muñeco" class="sidebar__imagen" />
+      <h3 class="tituloIngreseTexto">Ningún mensaje fue encontrado</h3>
+      <p class="mensajeIngreseTexto">Ingresa el texto que desees encriptar o desencriptar.</p>
+    </aside>
+    <div id="snackbar">Texto copiado..</div>
+    <input class="btnEncriptar" type="submit" value="Encriptar" />
+    <input class="btnDesencriptar" type="submit" value="Desencriptar" />
+    <footer class="footer">
+      © Desarrollado por Juan Moraga
+      <a href="https://github.com/moragacomar/oracle-next-education" target="_blank">(moragacomar)</a>
+    </footer>
+  </div>
+  <script src="js/app.js"></script>
+</body>
 
-  <body>
-    <div class="contenedor">
-      <header class="header">
-        <img src="img/logo.png" alt="Logo" srcset="" />
-        Challenge ONE Encriptador de Texto
-      </header>
-      <main class="contenido">
-        <textarea
-          class="textarea"
-          name="texto"
-          id="texto"
-          placeholder="Ingrese el texto aqui"
-        >
-        fenterlimescimesdaidenters poberr enternfrenterntair enterstenter dentersaifimesober y haibenterrlober cobernclufatimesdober cobern enterximestober!
-      </textarea
-        >
-        <p class="advertencia">Solo letras minúsculas y sin acentos</p>
-      </main>
-      <aside class="sidebar">
-        <img src="img/muñeco.png" alt="Muñeco" class="sidebar__imagen" />
-        <h3 class="tituloIngreseTexto">Ningún mensaje fue encontrado</h3>
-        <p class="mensajeIngreseTexto">
-          Ingresa el texto que desees encriptar o desencriptar.
-        </p>
-      </aside>
-      <div id="snackbar">Texto copiado..</div>
-      <input class="btnEncriptar" type="submit" value="Encriptar" />
-      <input class="btnDesencriptar" type="submit" value="Desencriptar" />
-      <footer class="footer">
-        © Desarrollado por Juan Moraga
-        <a
-          href="https://github.com/moragacomar/oracle-next-education"
-          target="_blank"
-          >(moragacomar)</a
-        >
-      </footer>
-    </div>
-    <script src="js/app.js"></script>
-  </body>
 </html>
