@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  border: 1px solid #000;
+}
+
+.header {
+  border: 1px solid #000;
+  background-color: #bbb;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar ul li {
+  display: inline;
+  margin: 0 0 0 15px;
+
+  font-size: 25px;
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar ul li a:hover {
+  color: lemonchiffon;
+}
+.main {
+  border: 1px solid #000;
+}
+
+.footer {
+  border: 1px solid #000;
+}
