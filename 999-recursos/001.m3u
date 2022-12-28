@@ -1,6 +1,5 @@
 #EXTM3U
-#EXTINF:577,index.m3u8
-file:///C:/Users/info/OneDrive/Downloads/index.m3u8
-#EXTINF:577,450223792-hd.mp4?token=5xfkqyD8aHCoFVQ6L2-zHuBduN378QAjG4UxgrDFwHE&expires=1672268095
+#EXTINF:222,Alura
 #EXTVLCOPT:network-caching=1000
-https://gnarus-video.s3.amazonaws.com/alura/450223792-hd.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20221228T215454Z&X-Amz-SignedHeaders=host&X-Amz-Expires=7200&X-Amz-Credential=AKIAJANTX2JPTEEU54TQ%2F20221228%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=2a8ce647a682986fc14383df03be7de8b52b1168011ff2a8dd0b87aa68d5437f
+https://gnarus-video.s3.amazonaws.com/alura/450223792-hd.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20221228T235509Z&X-Amz-SignedHeaders=host&X-Amz-Expires=7200&X-Amz-Credential=AKIAJANTX2JPTEEU54TQ%2F20221228%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=4aafda95c80af96f67862fdd83944929608145eb5d54d65a76c84c34f957e8c8
+https://gnarus-video.s3.amazonaws.com/alura/450224152-hd.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20221228T220744Z&X-Amz-SignedHeaders=host&X-Amz-Expires=7200&X-Amz-Credential=AKIAJANTX2JPTEEU54TQ%2F20221228%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=4f7c7c7ab0fae5833e0350cdff2cb29abe3a39b7f3fa3552a9a8bb321f1419f0
