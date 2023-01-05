@@ -1,0 +1,65 @@
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --bgcolor: #2a9d8f;
+    --bgColor2: #e9c46a;
+    --textColor: #f4a261;
+    --hover: #e9c46a;
+}
+
+.body {
+    border: 1px solid var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header {
+    padding: 20px 0;
+    border: 1px solid var(--black);
+    background-color: var(--plomo);
+    background-color: var(--bgcolor);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+.navbar ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--black);
+    font-size: 22px;
+}
+
+.navbar ul li a:hover {
+    color: var(--hover);
+}
+
+.formularioDeContacto {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.footer {
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    font-size: 13px;
+}
+
+.footer img {
+    margin: 10px 15px;
+}

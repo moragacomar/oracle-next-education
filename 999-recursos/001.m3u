@@ -1,0 +1,10 @@
+#EXTM3U
+#EXTVLCOPT:network-caching=1000
+#EXTINF:3,Alura
+https://gnarus-video.s3.amazonaws.com/alura/450224152-hd.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20221228T220744Z&X-Amz-SignedHeaders=host&X-Amz-Expires=7200&X-Amz-Credential=AKIAJANTX2JPTEEU54TQ%2F20221228%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=4f7c7c7ab0fae5833e0350cdff2cb29abe3a39b7f3fa3552a9a8bb321f1419f0
+#EXTINF:4,Alura
+https://gnarus-video.s3.amazonaws.com/alura/450224666-hd.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20221228T220507Z&X-Amz-SignedHeaders=host&X-Amz-Expires=7200&X-Amz-Credential=AKIAJANTX2JPTEEU54TQ%2F20221228%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=b9027d3a54ca0386c4b156d72618bb2d26e1fa0b5a49f6770682ed71b3c7840e
+#EXTINF:5,Alura
+https://gnarus-video.s3.amazonaws.com/alura/450224937-hd.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20221229T000622Z&X-Amz-SignedHeaders=host&X-Amz-Expires=7200&X-Amz-Credential=AKIAJANTX2JPTEEU54TQ%2F20221229%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=81cfc044b4a58e00a8fec58e4fa79cabf8416cceccd577e95b23a52a9e1a1a81
+#EXTINF:7,Alura
+https://gnarus-video.s3.amazonaws.com/alura/450227377-hd.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20221229T000719Z&X-Amz-SignedHeaders=host&X-Amz-Expires=7200&X-Amz-Credential=AKIAJANTX2JPTEEU54TQ%2F20221229%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=91d05342773e8cb621e629538c8401e872f425237b798806c65271ab07ca504f

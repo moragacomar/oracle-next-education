@@ -1,89 +1,307 @@
-/* Reset */
+/* RESET */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans,
-    Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
-  font-size: 1rem;
 }
 
-html {
-  background-color: #f3f5fc;
+/* VARIABLES */
+:root {
+  --bg-color: #f3f5fc;
+  --primary: #0a3871;
+  --secondary: #d8dfe8;
+  --white: #ffffff;
 }
 
-main {
+body {
+  background-color: var(--bg-color);
+  color: var(--primary);
+  font-family: "Inter", sans-serif;
+}
+
+.contenedor {
+  width: 95%;
+  max-width: 800px;
+  margin: 0px auto;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
+
+  grid-template:
+    "header header header" 80px
+    "contenido contenido sidebar" auto
+    "btnEncriptar btnDesencriptar sidebar" 60px
+    "footer footer footer" auto /
+    35% 35% 30%;
+}
+
+.contenedor div,
+.contenedor .header,
+.contenedor .sidebar,
+.contenedor .contenido,
+.contenedor .footer {
+  border-radius: 5px;
+  background-color: var(--bg-color);
+  padding: 20px;
+}
+
+.contenedor .header {
+  background-color: var(--bg-color);
+  grid-area: header;
   display: flex;
-  flex-direction: row;
+  justify-content: left;
   align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  margin-left: -75px;
 }
 
-.textoNormal,
-.textoCodificado {
-  margin: 1%;
-  flex-grow: 1;
+.contenedor .contenido {
+  grid-area: contenido;
+  min-height: 390px;
+  background-color: var(--bg-color);
+}
+
+.contenedor .footer {
+  background-color: var(--bg-color);
+  color: var(--primary);
+  grid-area: footer;
+  text-align: center;
+  padding: 0px;
+  font-size: 15px;
+  margin-top: 30px;
+}
+
+.contenedor .sidebar {
+  background-color: var(--white);
+  grid-area: sidebar;
+  text-align: center;
   display: flex;
   flex-direction: column;
-}
-#textoNormal,
-#textoCodificado {
-  padding: 5px;
-  border-radius: 10px;
-  border: 1px solid lightgray;
-}
-.header {
-  left: 0;
-  top: 0;
-  width: 100%;
-  background-color: #d8dfe8;
-  color: #0a3871;
   align-items: center;
-  display: flex;
-  padding: 15px 0;
+  justify-content: center;
+  min-height: 300px;
+  border-radius: 15px;
+  box-shadow: 2px 1px 20px 1px rgba(0, 0, 0, 0.2);
 }
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
+.sidebar__imagen {
+  width: 80%;
+  margin: 15px 10px;
+}
+
+.mensajeIngreseTexto {
+  word-wrap: break-word;
   width: 100%;
-  color: #0a3871;
-  background-color: #d8dfe8;
-  text-align: center;
+  margin-top: 15px;
   padding: 5px;
+  font-size: 15px;
 }
-input {
-  margin-top: 5px;
-  padding: 15px;
-  background: #d8dfe8;
-  border: 1px solid #0a3871;
-  border-radius: 24px;
-  cursor: pointer;
+.tituloIngreseTexto {
+  padding-top: 10px;
+  font-size: 20px;
 }
-
-.botones {
+.contenedor .btnEncriptar,
+.contenedor .btnDesencriptar,
+.contenedor .btnCopiar {
+  padding: 20px;
+  margin: 0px 10px;
   display: flex;
-  flex-direction: row;
-  gap: 10px;
-  margin-top: 5px;
-}
-
-.code {
-  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
   border-radius: 24px;
-  background-color: #0a3871;
   cursor: pointer;
-  color: #ffffff;
-  line-height: 19px;
-  border: none;
-  text-transform: uppercase;
+  font-size: 15px;
 }
 
-a,
-a:visited {
-  color: #0a3871;
+.contenedor .btnEncriptar {
+  grid-area: btnEncriptar;
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+}
+.contenedor .btnDesencriptar {
+  grid-area: btnDesencriptar;
+  background-color: var(--bg-color);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+.contenedor .btnCopiar {
+  margin: 15px 0px;
+  width: 100%;
+  grid-area: btnDesencriptar;
+  background-color: var(--white);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.textarea {
+  width: 100%;
+  height: 98%;
+  background-color: var(--bg-color);
+  color: var(--primary);
+  border: none;
+  font-size: 1.5rem;
+  font-family: "Inter", sans-serif;
+}
+
+.textarea:focus {
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  color: var(--primary);
+}
+
+.advertencia {
+  font-size: 12px;
+}
+.advertencia::before {
+  content: url(./img/atencion.svg);
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+::placeholder {
+  color: var(--primary);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  color: var(--primary);
+}
+
+::-ms-input-placeholder {
+  color: var(--primary);
+}
+a {
+  color: var(--primary);
   text-decoration: none; /* no underline */
 }
-a:focus,
-a:hover {
-  color: #3d5f8a;
+
+/* Toast Notificación */
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: var(--primary);
+  color: var(--white);
+  text-align: center;
+  border-radius: 20px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "header header"
+      "contenido contenido"
+      "btnEncriptar btnDesencriptar"
+      "sidebar sidebar"
+      "footer footer";
+  }
+  .sidebar__imagen {
+    display: none;
+  }
+  .contenedor .sidebar {
+    margin: 20px auto;
+    min-height: 100px;
+  }
+  .contenedor .contenido {
+    min-height: 335px;
+  }
+  .contenedor .footer {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  .contenedor .header {
+    margin: -10px 0px 0px -25px;
+    font-size: 15px;
+  }
+  .contenedor .btnCopiar {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .contenedor {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "header"
+      "contenido"
+      "btnEncriptar"
+      "btnDesencriptar"
+      "sidebar "
+      "footer ";
+  }
+  .contenedor .btnDesencriptar {
+    margin-top: 15px;
+  }
+
+  .contenedor .header {
+    padding-bottom: 5px;
+  }
+
+  .tituloIngreseTexto {
+    font-size: 24px;
+  }
+  .contenedor .sidebar {
+    width: 300px;
+  }
 }

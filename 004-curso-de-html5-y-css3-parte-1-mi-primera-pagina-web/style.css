@@ -1,26 +1,57 @@
-* {
-  background-color: #cccccc;
+body {
 }
 
-.parrafo {
+#banner {
+  width: 100%;
+}
+
+.principal {
+  background: #cccccc;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+em strong {
+  color: red;
+}
+
+#mision {
   font-size: 20px;
+}
+
+.diferenciales {
+  background: #ffffff;
+  padding: 30px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.items {
   font-style: italic;
 }
 
-.centrar {
-  text-align: center;
+ul {
+  display: inline-block;
+  vertical-align: top;
+  width: 20%;
+  margin-right: 15%;
 }
 
-.negrita {
-  font-weight: 900;
+.imagenDiferenciales {
+  width: 50%;
 }
 
-.titulo {
-  background-color: #cccccc;
-}
-strong {
-  background-color: red;
-}
-img {
+.header {
+  font-size: xx-large;
   text-align: center;
+  padding: 25px;
 }

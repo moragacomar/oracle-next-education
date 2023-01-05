@@ -1,7 +1,7 @@
 
 const codificarTexto = () => {
     const textoNormal = eliminarAcentos(
-        document.getElementById("textoNormal").value.toLowerCase()
+        document.getElementById("texto").value.toLowerCase()
     );
     const textoCodificado = textoNormal.split("").map((el) => {
         if (el === "a") return "ai";
@@ -11,7 +11,7 @@ const codificarTexto = () => {
         else if (el === "u") return "ufat";
         else return el;
     });
-    document.getElementById("textoCodificado").value = textoCodificado.join("");
+    document.getElementById("mostrarMensaje").innerHTML = `<p class="mostrarMensaje__texto">${textoCodificado.join("")}</p>`
 };
 
 const decodificarTexto = () => {
@@ -35,9 +35,6 @@ const limpiar = (e) => {
     e.target.id === "limpiarTexto2" && (document.getElementById("textoCodificado").value = "")
 }
 
-document.getElementById("limpiarTexto1").onclick = limpiar;
-document.getElementById("limpiarTexto2").onclick = limpiar;
 document.getElementById("codificarTexto").onclick = codificarTexto;
 document.getElementById("decodificarTexto").onclick = decodificarTexto;
-document.getElementById("intercambiar").onclick = intercambiar;
 
