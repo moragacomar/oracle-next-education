@@ -5,6 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto | Barberia Alura</title>
+    <link rel="stylesheet" href="contacto.css" />
+    <link rel="stylesheet" href="reset.css" />
   </head>
-  <body></body>
+  <body class="body">
+    <header class="header">
+      <h1>
+        <img src="imagenes/logo.png" alt="Logo" />
+      </h1>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form action="/" class="formularioDeContacto">
+        <label for="nombre">Apellido y nombre</label>
+        <input type="text" name="nombre" id="nombre" />
+        <label for="correo">Correo</label>
+        <input type="text" name="correo" id="correo" />
+        <label for="telefono">Telefono</label>
+        <input type="text" name="telefono" id="telefono" />
+        <label for="mensaje">Mensaje</label>
+        <textarea name="mansaje" id="mansaje" cols="30" rows="10"></textarea>
+        <label for="medioDeContacto">mediodecontacto</label>
+
+        <label for="horarioDeContacto">horario de contacto</label>
+
+        <label for="newsletter">Mensaje</label>
+        <input type="submit" value="Enviar formulario" />
+      </form>
+      <table>
+        <tr>
+          <th>Dia</th>
+          <th>Horario</th>
+        </tr>
+        <tr>
+          <td>Lunes</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Miercoles</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Viernes</td>
+          <td></td>
+        </tr>
+      </table>
+    </main>
+    <footer class="footer">
+      <img src="imagenes/logo-blanco.png" alt="Footer" />
+      <p>Copyright © Juan Moraga 2023</p>
+    </footer>
+  </body>
 </html>
