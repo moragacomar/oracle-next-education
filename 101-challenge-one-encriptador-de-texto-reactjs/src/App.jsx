@@ -20,7 +20,7 @@ function App() {
       else if (el === "u") return "ufat";
       else return el;
     });
-    return textoCodificado;
+    return textoCodificado.join("");
   };
 
   const decodificarTexto = (mensaje) => {

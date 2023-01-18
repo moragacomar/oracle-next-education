@@ -1,7 +1,8 @@
 const Aside = (props) => {
   const copiar = async () => {
+    console.log(props.mensaje);
     /* Copiar al portapapeles*/
-    await navigator.clipboard.writeText(props.mensaje.join(""));
+    await navigator.clipboard.writeText(props.mensaje);
 
     /* Toast Notificación */
     const toast = document.getElementById("snackbar");
